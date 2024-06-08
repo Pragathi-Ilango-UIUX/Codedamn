@@ -1,0 +1,56 @@
+.box {
+	height: 75px;
+	width: 75px;
+	background-color: lightblue;
+	border-radius: 0.2rem;
+}
+
+.container {
+	background-color: yellow;
+	width: 80%;
+	border-radius: 0.3rem;
+	display: grid;
+	gap: 1.2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0.2rem 0.2rem;
+}
+
+.box:hover {
+    animation: transformRotate 1s;
+}
+
+@keyframes transformRotate {
+    0% {
+        transform: translate(0px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(1px, 0px) rotate(1deg);
+    }
+    20% {
+        transform: translate(0px, 3px) rotate(0deg); /* 1px + 3px */
+    }
+    30% {
+        transform: translate(3px, 0px) rotate(-1deg); /* 4px + 1px */
+    }
+    40% {
+        transform: translate(0px, 1px) rotate(0deg); /* 5px + 3px */
+    }
+    50% {
+        transform: translate(1px, 0px) rotate(1deg); /* 8px + 1px */
+    }
+    60% {
+        transform: translate(0px, 3px) rotate(0deg); /* 9px + 3px */
+    }
+    70% {
+        transform: translate(3px, 0px) rotate(-1deg); /* 12px + 1px */
+    }
+    80% {
+        transform: translate(0px, 1px) rotate(0deg); /* 13px + 3px */
+    }
+    90% {
+        transform: translate(1px, 0px) rotate(1deg); /* 16px + 1px */
+    }
+    100% {
+        transform: translate(0px, 3px) rotate(0deg); /* 17px + 3px */
+    }
+}
