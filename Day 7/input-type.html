@@ -1,0 +1,32 @@
+<!-- Pragathi Ilango - Day 7 (form - input types)-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Input Types Lab</title>
+		<style>
+			input {
+			/*
+			Block-level elements start on a new line, and any elements that come after them will also start on a new line. 
+			This behavior ensures that block-level elements do not sit next to each other horizontally.
+			By default, a block-level element’s width will be 100% of its parent container's width unless specified otherwise. */
+			
+			display: block;
+			margin-bottom: 10px; /* Optional: Adds space between inputs */
+			}
+		</style>
+	</head>
+	<body>
+		<h1>HTML Input Types</h1>
+		<form>
+			<input id="mytext" type="text" placeholder="Type some text">
+			<input id="myemail" type="email" placeholder="Type your email">
+			<input id="mypassword" type="password" placeholder="Type your password">
+			<input id="mysubmit" type="submit" value="Submit"> 
+		</form>
+		<!-- The value attribute in an input element specifies the initial value of the input field. 
+			 For example -
+			  <input type="text" value="Default Text">
+			  The text input field will initially display "Default Text" as its value. Users can edit this text.
+		-->
+	</body>
+</html>
