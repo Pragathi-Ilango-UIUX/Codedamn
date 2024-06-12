@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+/* #18181b - NavBar Background Color */
+
+/* #a1a1aa - Text Color */
+
+/* Get Started Button Bg color - #5046e5 */
+
+/* Expander down arrow design used */
+
+body {
+	font-family: "Inter", sans-serif;
+      margin: auto;
+}
+
+h2 {
+	font-weight: 600;
+	font-family: "Inter", sans-serif;
+  color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+	  align-items: center;
+    background-color: #18181b;
+    padding: 10px;
+    height: 40px;
+	  color:#a1a1aa;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1; /* the item can grow to take up any remaining space in the flex container, proportionally to the other flex items with the same flex-grow value. */
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .arrow {
+    margin-left: 5px;
+    width: 10px;
+}
+
+.get-started {
+    background-color: #5046e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 5px;
+}
