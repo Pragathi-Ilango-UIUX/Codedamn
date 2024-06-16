@@ -1,0 +1,18 @@
+/* 
+For the text-overflow property to work properly, the following conditions must be met:
+
+- The element must have white-space set to nowrap, pre, or pre-line to prevent the text from wrapping.
+- The element must have overflow set to hidden, scroll, or auto to restrict the display area. 
+
+Default for text-overflow is clip.
+*/
+#container{
+    width: 300px;
+
+    /* This property applies to block containers that are overflowed by their content when the white-space property is set to nowrap or when the content is otherwise restricted to a single line. */
+    p{
+        white-space: nowrap; /* Prevent text from wrapping */
+        text-overflow: ellipsis; /* Show ellipsis */
+        overflow: hidden; /* Hide overflowing text */
+    }
+}
