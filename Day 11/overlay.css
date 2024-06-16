@@ -1,0 +1,51 @@
+/* 
+List of colors used 
+background color of the element : cyan
+*/
+
+/*
+
+NOTES -
+
+- An element with position: relative; is positioned relative to its normal position in the document flow.
+  Here, The #background-component is given position: relative; to establish it as a containing block for its absolutely positioned child, the #overlay. This means the #overlay will be positioned relative to the #background-component.
+
+- An element with position: absolute; is removed from the normal document flow and positioned relative to its nearest positioned ancestor. If no positioned ancestor is found, it is positioned relative to the initial containing block ( <html> element).
+  The #overlay is given position: absolute; and positioned with top: 0;, left: 0;, width: 100%;, and height: 100%; to cover the entire #background-component.
+
+- When the #background-component is hovered over, the CSS rule #background-component:hover #overlay changes the opacity of #overlay to 1, making it visible with a smooth transition.
+
+- When using position: absolute;, an element is positioned relative to its nearest positioned ancestor. However, it does not automatically size itself to cover the entire area of its containing block unless explicitly specified. 
+  This is different from elements with position: relative; or position: static;, which naturally take up space within the document flow.
+
+- To make an absolutely positioned element cover the entire area of its containing block, you need to set its dimensions explicitly. This is because, by default, an absolutely positioned element will not stretch to fill its containing block.
+
+- top: 0; and left: 0; - These properties specify the position of the top and left edges of the absolutely positioned element relative to its containing block.
+  Here, it ensures the overlay starts from the top,left edge
+*/
+
+#background-component{
+    width: 250px;
+    height: 400px;
+    background-color:cyan;
+    position:relative;
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 100%; /* Ensures the overlay covers the entire width of the containing block */
+    height: 100%; /* Ensures the overlay covers the entire height of the containing block */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+    color:white;
+}
+
+#background-component:hover .overlay{
+    opacity:1;
+}
