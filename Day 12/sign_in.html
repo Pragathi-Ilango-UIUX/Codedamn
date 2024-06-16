@@ -1,0 +1,63 @@
+<!-- Pragathi Ilango - Day 9 - Text overflow-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Navigation Bar Challenge</title>
+	<link rel="stylesheet" type="text/css" href="signin.css" />
+</head>
+<body>
+	<h2>Sign in to <span id="title"> codedamn </span></h2>
+	<form class="signin-form">
+		<div class="signin-card">
+			<!-- Email Input -->
+			<div class="form-group">
+				<label for="email">Email address/ Username</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			
+			<!-- Password Input -->
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			
+			<!-- Remember Me and Forgot Password -->
+			<div class="form-group form1">
+					<div class="remember-me">
+						<input type="checkbox" id="remember-me" name="remember-me">
+						<label for="remember-me">Remember me</label>
+					</div>
+					<a href="#" class="forgot-password">Forgot your password?</a>
+			</div>
+			
+			<!-- Sign In Button -->
+			<button type="submit" class="signin-button"><img src="lock.svg" alt="google icon"> Sign In</button>
+			
+			<!-- Separator with Text -->
+			<div class="separator">
+				<span>or continue with</span>
+			</div>
+			
+			<!-- Social Login Buttons -->
+			<div class="social-buttons">
+				<button class="google-button">
+					<img src="google.svg" alt="google icon">
+				</button>
+				<button class="github-button">
+					<img src="github.svg" alt="google icon">
+				</button>
+			</div>
+			
+			<!-- Create Account Prompt -->
+			<div class="create-account">
+				Don't have an account? <span>Create Account</span>
+			</div>
+			
+			<!-- Disclaimer Text -->
+			<div class="disclaimer">
+				This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+	font-family: "Inter", sans-serif;
+    flex-direction: column;
+    color: #333;
+}
+
+h2 {
+	font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+	font-family: "Inter", sans-serif;
+}
+
+#title {
+	background-image: linear-gradient(to bottom right, #818cf8, #22d3ee);
+	/* background-clip: text; */
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-color: #818cf8;
+	color: transparent;
+}
+
+
+.signin-card {
+    background-color: #fff;
+    width: 350px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    label{
+        margin-bottom: 0px;
+    }
+}
+
+.remember-me input {
+    margin-right: 5px;
+    margin-left: 0px;
+}
+
+.forgot-password {
+    float: right;
+    font-size: 14px;
+    color: rgb(79 70 229);
+    text-decoration: none;
+}
+
+.signin-button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(79 70 229);
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 15px;
+
+    img{
+        position: absolute;
+        left: 10px;
+        width: 16px;
+        height: 16px;
+    }
+    
+}
+
+.signin-button:hover {
+    background-color: #0056b3;
+}
+
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    color: #A9A9A9;
+    font-size: 14px;
+}
+
+.separator:before,
+.separator:after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background-color: #ccc;
+    vertical-align: middle;
+}
+
+.separator:before {
+    margin-right: 10px;
+}
+
+.separator:after {
+    margin-left: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-buttons button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.social-buttons button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.create-account span {
+    color: rgb(79 70 229);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #A9A9A9;
+}
+
+.form1{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
