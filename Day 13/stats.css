@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0 20px;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+/* 
+List of colors used 
+
+Heading & Card Heading - #111827
+Background color - #f3f4f6 
+Description, Text color - #6b7280 
+Number / Percentage color - #4f46e5
+
+Green Chip Background - #dcfce7 
+Green Arrow color - #22c55d
+Green Text color - #407f54
+
+Red Chip Background - #fee2e2
+Red Arrow Color - #ef4444
+Red Text Color - #991b1b
+
+*/
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px; /* So the cards do not extend to the full width of the browser tab */
+}
+.card {
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    border-right: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card:last-child {
+    border-right: none;
+}
+
+.card:first-child {
+    border-top-left-radius: 10px; /* Adjust the value as needed */
+    border-bottom-left-radius: 10px; /* Adjust the value as needed */
+}
+
+.card:last-child {
+    border-top-right-radius: 10px; /* Adjust the value as needed */
+    border-bottom-right-radius: 10px; /* Adjust the value as needed */
+}
+
+.stat-title {
+    color: #111827;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4f46e5;
+    white-space: nowrap;
+}
+.stat-change {
+    font-weight: 400;
+    font-size: 12px;
+    color: #6b7280;
+    margin-left: 5px;
+}
+.positive, .negative {
+    padding: 1px 10px;
+    border-radius: 30px;
+    margin-left: 5px;
+    font-size: 12px;
+    height: fit-content;
+    font-weight: 400px;
+}
+ .positive {
+    background-color: #dcfce7;
+    color: #407f54;
+}
+ .arrow1{
+    padding:0;
+    color: #22c55d;
+}
+ .negative {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+.arrow2{
+    padding:0;
+    color: #ef4444;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;    
+    align-items: baseline;
+}
+
+.stat-value, .negative, .positive {
+    display: flex;
+    flex-shrink: 0; /* Prevent the items from shrinking */
+    align-items: baseline;
+}
+
+.stat-change, .arrow2, .arrow1 {
+    margin-right: 5px;
+    display: inline; /* Ensure these are inline elements */
+}
