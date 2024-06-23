@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+body {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instagram-post {
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header, .post-actions, .post-actions1, .post-likes, .post-description, .view-comments, .add-comment, .post-time {
+    padding: 5px 15px;
+}
+
+.post-header {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.username {
+    display: block;
+    font-weight: 600;
+}
+
+.user-title {
+    display: block;
+    color: #888;
+    font-size: 14px;
+}
+
+.post-options {
+    cursor: pointer;
+}
+
+.post-image {
+    width: 100%;
+    display: block;
+    height: 300px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.post-likes {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.post-description {
+    font-size: 14px;
+}
+
+.hashtags {
+    color: #00376b;
+}
+
+.view-comments {
+    color: #888;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-comment input {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+}
+
+.add-comment input:focus {
+    outline: none;
+}
+
+.post-time {
+    color: #888;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.add-comment{
+    display: flex;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
