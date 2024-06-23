@@ -1,0 +1,11 @@
+/* make the odd rows of the table lightgray */
+/*
+Resource - https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+
+The :nth-child() CSS pseudo-class matches elements based on the indexes of the elements in the child list of their parents. 
+In other words, the :nth-child() selector selects child elements according to their position among all the sibling elements within a parent element.
+*/
+tr:nth-child(even)
+{
+    background: lightgrey;
+}
