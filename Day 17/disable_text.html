@@ -1,0 +1,35 @@
+<!-- Coded by Pragathi Ilango - Day 17 - Disable Text Selection -->
+<!-- Task - Make the given article element non-selectable using the cursor (user-select property)-->
+<!-- By default user-select value is set to auto for all userAgents (Browsers). -->
+
+<!-- DOES NOT WORK ON SAFARI 
+
+SOLUTION
+All the browsers by default do not support thisuser-select property to ensure cross-compatability (the features works across different browsers) we need to add a webkit property.
+Webkit is the rendering engine used in the Safari Browser. Whereas Blink in the rendering engine used in Chromium based browsers
+
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Disable Text Selection</title>
+		<link rel="stylesheet" type="text/css" href="disable_text.css" />
+	</head>
+	<body>
+		<div class="text">
+			<h1>Lorem text</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Asperiores provident similique, itaque eveniet, explicabo sint
+				beatae hic et nesciunt expedita, eius dolores. In ipsa, repellat
+				officia nemo delectus quibusdam nostrum!
+			</p>
+
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+				et numquam ullam laudantium nulla tempore vel nostrum ratione
+				esse possimus. <a href="https://wikipedia.org">Click Here!</a>
+			</p>
+		</div>
+	</body>
+</html>
