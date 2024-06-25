@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+/* 
+List of colors used 
+
+tooltip background : lightgray 
+tooltip border: darkgray 
+text: black 
+
+Resource - https://www.w3schools.com/css/css_tooltip.asp
+
+Note - <button id="button" title="This is a simple tooltip">Simple Button</button>
+Above is a simple way to add tooltips to an element but you cannot style the tooltip with custom CSS.
+
+*/
+
+/* Basic styles for the button */
+#button {
+    position: relative;
+    font-size: 16px;
+}
+
+/* Tooltip container */
+#button::after {
+    content: "This is a simple tooltip";
+    position: absolute;
+    top: calc(100% + 10px);/* Position the tooltip above the button */
+    left: 30%;
+    background-color: lightgray;
+    color: red;
+    padding: 2px 5px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+    z-index: 1;
+}
+
+/* Show the tooltip when hovering over the button */
+#button:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*
+Notes:
+
+1. Pseudo-elements ::before and ::after in CSS are used to insert content before or after the actual content of an element.
+
+2. The position: relative; property on the button means that the tooltip (::after pseudo-element) will be positioned relative to the button.
+
+3. The position: absolute; property on the ::after pseudo-element allows you to place the tooltip precisely within the button's relative positioning context.
+
+4. The top: 100%; property sets the top edge of the tooltip to be 100% below the button's bottom edge. Essentially, this moves the tooltip down by the full height of the button, placing it directly below the button.
+*/
