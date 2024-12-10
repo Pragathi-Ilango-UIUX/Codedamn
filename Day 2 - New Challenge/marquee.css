@@ -1,0 +1,28 @@
+/* Set the .marquee container */
+.marquee {
+  width: 100%; /* Full width of the container */
+  height: 50px; /* Height of the marquee container */
+  overflow: hidden; /* Hide any overflowed text */
+  position: relative; /* Position the container */
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the text inside the marquee */
+.marquee p {
+  margin: 0; /* Remove default margin */
+  animation: scroll-left 10s linear infinite; /* Apply the scroll-left animation */
+}
+
+/* Keyframes for the scroll-left animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+
