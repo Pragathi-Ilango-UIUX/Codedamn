@@ -1,0 +1,20 @@
+.loader {
+  width: 50px; /* Set the width of the loader */
+  height: 50px; /* Set the height of the loader */
+  border: 5px solid #f3f3f3; /* Light gray border */
+  border-top: 5px solid #3498db; /* Blue border-top for the rotating part */
+  border-radius: 50%; /* Make it circular */
+  animation: spin 1.5s linear infinite; /* Set the spinning animation */
+}
+
+/* Keyframes for spinning the loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Complete one full rotation */
+  }
+}
+
+
