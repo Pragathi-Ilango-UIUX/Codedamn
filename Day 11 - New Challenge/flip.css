@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Container to provide perspective effect */
+.card-container {
+  perspective: 1000px; /* Adds depth for 3D effect */
+}
+
+/* Card Styling */
+.card {
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d; /* Enables 3D transformations */
+  transition: transform 0.6s; /* Smooth transition for the flip effect */
+  transform-origin: center; /* Ensure the card flips around its center */
+  cursor: pointer;
+  position: relative; /* Makes the card positioned relative for proper layering */
+}
+
+/* Card flip effect when hovered */
+.card:hover {
+  transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+/* Front and Back Side Styles */
+.card-front,
+.card-back {
+  position: absolute; /* Both sides overlap perfectly */
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the side not currently visible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+/* Front side styles */
+.card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.card-front img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px; /* Matches the card's rounded corners */
+  margin-bottom: 10px; /* Adds spacing below the image */
+}
+
+/* Back side styles */
+.card-back {
+  background-color: rgba(76, 0, 130, 0.534);
+  color: white;
+  transform: rotateY(180deg); /* Flip the back side initially */
+}
+
+.card-back h1 {
+  margin-bottom: 10px; /* Adds spacing below the heading */
+}
+
+.card-back p {
+  text-align: center;
+}
