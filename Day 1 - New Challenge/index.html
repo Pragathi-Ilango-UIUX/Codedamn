@@ -1,0 +1,60 @@
+<!-- Created by Pragathi Ilango - Dec 10,2024 - Resumed challenge - New prompt given by Codedamn-->
+
+<!-- Position property is used to define how an element is positioned on the page. The position property works with top, bottom, left, and right, which specify the position relative to the nearest positioned parent element. -->
+
+<!--
+  There are several types of positioning:
+
+      Static (default): Elements are rendered in the order they appear in the source code.
+      Relative: Elements are positioned relative to their normal position.
+      Absolute: Elements are positioned relative to the nearest positioned ancestor.
+      Fixed: Elements are positioned relative to the browser window.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Property Lab</title>
+  <style>
+    #container {
+      width: 300px;
+      height: 300px;
+      border: 2px solid black; /* To show the boundary of the container */
+      position: relative; /* Required for positioning relative and absolute boxes */
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+    }
+
+    #static-box {
+      background-color: blue;
+    }
+
+    #relative-box {
+      background-color: green;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    #absolute-box {
+      background-color: red;
+      position: absolute;
+      top: 220px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <div id="static-box" class="box"></div>
+    <div id="relative-box" class="box"></div>
+    <div id="absolute-box" class="box"></div>
+  </div>
+
+</body>
+</html>
